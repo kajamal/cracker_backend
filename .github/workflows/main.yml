@@ -32,8 +32,8 @@ jobs:
         with:
           name: springboot-example
       - name: Deploy to Azure App Service
-        uses: azure/webapps-deploy@v4
+        uses: azure/webapps-deploy@v2
         with:
-          app-name: springboot-app-test
+          app-name: crackerbackend
           publish-profile: ${{ secrets.azureWebAppPublishProfile }}
           package: '*.jar'
